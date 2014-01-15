@@ -29,6 +29,7 @@ public class Operations {
 	}
 	
 	public String div(String num1, String num2){
+		String error = "Cannot divide by zero!";
 		long x = Long.parseLong(num1);
 		long y = Long.parseLong(num2);
 		if(x != 0){
@@ -37,7 +38,6 @@ public class Operations {
 			return answer;
 		}
 		else{
-			String error = "Cannot divide by zero!";
 			return error;
 		}
 	}

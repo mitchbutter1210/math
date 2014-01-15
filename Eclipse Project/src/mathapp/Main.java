@@ -48,8 +48,8 @@ public class Main {
 	 */
 	private void initialize() {
 		frmMathApp = new JFrame();
-		frmMathApp.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/mathapp/edu_mathematics.png")));
 		frmMathApp.setResizable(false);
+		frmMathApp.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/mathapp/edu_mathematics.png")));
 		frmMathApp.setTitle("Math App --- Version 2.0 --- By Mitchell Butterfield");
 		frmMathApp.setBounds(100, 100, 533, 487);
 		frmMathApp.getContentPane().setLayout(null);
