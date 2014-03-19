@@ -89,4 +89,16 @@ public class Operations {
 		String ans2 = Double.toString(answer2);
 		return ans2;
 	}
+	
+	public String OhmsLaw(double x, double y, boolean findV, boolean findI, boolean findR){
+		String answer = null;
+		
+		if(findV == true){
+			double answerV = x * y;
+			String answer1 = Double.toString(answerV);
+		}
+		
+		return answer;
+		
+	}
 }
