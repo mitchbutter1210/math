@@ -30,11 +30,11 @@ public class Operations {
 	
 	public String div(String num1, String num2){
 		String error = "Cannot divide by zero!";
-		long x = Long.parseLong(num1);
-		long y = Long.parseLong(num2);
+		double x = Long.parseLong(num1);
+		double y = Long.parseLong(num2);
 		if(x != 0){
-			long z = x / y;
-			String answer = Long.toString(z);
+			double z = x / y;
+			String answer = Double.toString(z);
 			return answer;
 		}
 		else{
