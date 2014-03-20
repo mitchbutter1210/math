@@ -50,7 +50,7 @@ public class Main {
 		frmMathApp = new JFrame();
 		frmMathApp.setResizable(false);
 		frmMathApp.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/mathapp/edu_mathematics.png")));
-		frmMathApp.setTitle("Math App --- Version 2.0 --- By Mitchell Butterfield");
+		frmMathApp.setTitle("Math App Version 2.1");
 		frmMathApp.setBounds(100, 100, 533, 542);
 		frmMathApp.getContentPane().setLayout(null);
 		
@@ -192,5 +192,14 @@ public class Main {
 		});
 		btnNewButton.setBounds(12, 427, 117, 23);
 		frmMathApp.getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Ohm's Law\r\n");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Ohm.main(null);
+			}
+		});
+		btnNewButton_1.setBounds(141, 427, 117, 23);
+		frmMathApp.getContentPane().add(btnNewButton_1);
 	}
 }

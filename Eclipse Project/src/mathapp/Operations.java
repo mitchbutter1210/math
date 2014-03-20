@@ -32,7 +32,7 @@ public class Operations {
 		String error = "Cannot divide by zero!";
 		double x = Long.parseLong(num1);
 		double y = Long.parseLong(num2);
-		if(x != 0){
+		if(y != 0){
 			double z = x / y;
 			String answer = Double.toString(z);
 			return answer;
@@ -91,11 +91,22 @@ public class Operations {
 	}
 	
 	public String OhmsLaw(double x, double y, boolean findV, boolean findI, boolean findR){
+		//Ohm's Law: V = I * R
 		String answer = null;
 		
 		if(findV == true){
 			double answerV = x * y;
-			String answer1 = Double.toString(answerV);
+			answer = Double.toString(answerV);
+		}
+		
+		if(findI == true){
+			double answerI = x / y;
+			answer = Double.toString(answerI);
+		}
+		
+		if(findR == true){
+			double answerR = x / y;
+			answer = Double.toString(answerR);
 		}
 		
 		return answer;

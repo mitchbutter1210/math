@@ -1,1 +1,1 @@
-A math app I'm currently developing. Currently Version 2.0
+A math app I'm currently developing. Currently Version 2.1
