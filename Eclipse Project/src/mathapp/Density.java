@@ -77,7 +77,7 @@ public class Density {
 		massText.setColumns(10);
 		
 		JLabel lblEnterVolume = new JLabel("Enter volume");
-		lblEnterVolume.setBounds(217, 97, 68, 14);
+		lblEnterVolume.setBounds(213, 97, 86, 14);
 		frmDensity.getContentPane().add(lblEnterVolume);
 		
 		volumeText = new JTextField();
