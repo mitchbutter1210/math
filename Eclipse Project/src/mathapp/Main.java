@@ -50,7 +50,7 @@ public class Main {
 		frmMathApp = new JFrame();
 		frmMathApp.setResizable(false);
 		frmMathApp.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/mathapp/edu_mathematics.png")));
-		frmMathApp.setTitle("Math App Version 2.1");
+		frmMathApp.setTitle("Math Helper");
 		frmMathApp.setBounds(100, 100, 533, 542);
 		frmMathApp.getContentPane().setLayout(null);
 		
@@ -160,7 +160,7 @@ public class Main {
 		JButton btnAbout = new JButton("About");
 		btnAbout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane.showMessageDialog(null, "This program was designed and developed by Mitchell Butterfield", "About the program", JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Developed by Mitchell Butterfield", "About", JOptionPane.PLAIN_MESSAGE);
 			}
 		});
 		btnAbout.setBounds(401, 354, 117, 25);
