@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
+import java.awt.Toolkit;
 
 public class Ohm {
 
@@ -49,6 +50,7 @@ public class Ohm {
 	 */
 	private void initialize() {
 		frmOhmsLaw = new JFrame();
+		frmOhmsLaw.setIconImage(Toolkit.getDefaultToolkit().getImage(Ohm.class.getResource("/mathapp/edu_mathematics.png")));
 		frmOhmsLaw.setTitle("Ohm's Law\r\n");
 		frmOhmsLaw.setResizable(false);
 		frmOhmsLaw.setBounds(100, 100, 450, 300);
