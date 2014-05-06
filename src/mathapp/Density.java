@@ -3,7 +3,6 @@ package mathapp;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import java.awt.Toolkit;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -13,19 +12,7 @@ import java.awt.event.ActionEvent;
 
 public class Density {
 	
-	public static String findDensity(String mass, String volume){
-		long massNum = Long.parseLong(mass);
-		long volumeNum = Long.parseLong(volume);
-		
-		if(volumeNum == 0){
-			JOptionPane.showMessageDialog(null, "You can't divide by zero!", "Math Error!", JOptionPane.PLAIN_MESSAGE);
-		}
-		
-		long density = massNum / volumeNum;
-		String answer = Long.toString(density);
-		return answer;
-		
-	}
+	 static Operations op = new Operations();
 
 	private JFrame frmDensity;
 	private JTextField massText;
@@ -109,7 +96,7 @@ public class Density {
 		btnFind = new JButton("Find");
 		btnFind.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				answer.setText(findDensity(massText.getText(), volumeText.getText()));
+				answer.setText(op.findDensity(massText.getText(), volumeText.getText()));
 			}
 		});
 		btnFind.setBounds(419, 312, 89, 23);

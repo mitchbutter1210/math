@@ -1,5 +1,7 @@
 package mathapp;
 
+import javax.swing.JOptionPane;
+
 public class Operations {
 	
 	static Main m = new Main();
@@ -66,28 +68,36 @@ public class Operations {
 		return ans;
 	}
 	
-	@SuppressWarnings("unused")
 	public String quad1(double a, double b, double c){
 		double sqrtPre = Math.pow(b, 2) - (4*a*c);
 		double bottom = 2 * a;
 		double sqrt = Math.sqrt(sqrtPre);
 		double answer1 = (-b + sqrt) / bottom;
-		double answer2 = (-b - sqrt) / bottom;
 		String ans1 = Double.toString(answer1);
-		String ans2 = Double.toString(answer2);
 		return ans1;
 	}
 	
-	@SuppressWarnings("unused")
 	public String quad2(double a, double b, double c){
 		double sqrtPre = Math.pow(b, 2) - (4*a*c);
 		double bottom = 2 * a;
 		double sqrt = Math.sqrt(sqrtPre);
-		double answer1 = (-b + sqrt) / bottom;
 		double answer2 = (-b - sqrt) / bottom;
-		String ans1 = Double.toString(answer1);
 		String ans2 = Double.toString(answer2);
 		return ans2;
+	}
+	
+	public String findDensity(String mass, String volume){
+		long massNum = Long.parseLong(mass);
+		long volumeNum = Long.parseLong(volume);
+		
+		if(volumeNum == 0){
+			JOptionPane.showMessageDialog(null, "You can't divide by zero!", "Math Error!", JOptionPane.PLAIN_MESSAGE);
+		}
+		
+		long density = massNum / volumeNum;
+		String answer = Long.toString(density);
+		return answer;
+		
 	}
 	
 	public String OhmsLaw(double x, double y, boolean findV, boolean findI, boolean findR){
