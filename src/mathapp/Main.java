@@ -50,11 +50,11 @@ public class Main {
 		frmMathApp = new JFrame();
 		frmMathApp.setResizable(false);
 		frmMathApp.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/mathapp/edu_mathematics.png")));
-		frmMathApp.setTitle("Math Helper");
+		frmMathApp.setTitle("The Calculator - Version 1.03");
 		frmMathApp.setBounds(100, 100, 533, 542);
 		frmMathApp.getContentPane().setLayout(null);
 		
-		JLabel lblEnterANumber = new JLabel("Enter a number");
+		JLabel lblEnterANumber = new JLabel("First Number");
 		lblEnterANumber.setBounds(211, 36, 150, 15);
 		frmMathApp.getContentPane().add(lblEnterANumber);
 		
@@ -63,8 +63,8 @@ public class Main {
 		frmMathApp.getContentPane().add(text1);
 		text1.setColumns(10);
 		
-		JLabel lblEnterAnotherNumber = new JLabel("Enter another number");
-		lblEnterAnotherNumber.setBounds(200, 90, 190, 15);
+		JLabel lblEnterAnotherNumber = new JLabel("Second Number");
+		lblEnterAnotherNumber.setBounds(200, 92, 190, 15);
 		frmMathApp.getContentPane().add(lblEnterAnotherNumber);
 		
 		text2 = new JTextField();
